@@ -10,5 +10,3 @@ Sentry.init do |config|
     true
   end
 end
-
-Sentry.capture_message("test message myyy")

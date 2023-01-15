@@ -1,4 +1,4 @@
-FROM ruby:3.1.2-slim
+FROM ruby:3.1.3-slim
 
 RUN apt-get update -qq && apt-get install -yq --no-install-recommends \
     build-essential \
@@ -44,6 +44,7 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -\
 # want real secrets in the image or image history. The real secret is passed in
 # at run time
 ARG SECRET_KEY_BASE=fakekeyforassets
+ARG SENTRY_DSN=fakevalue
 RUN bin/rails assets:clobber && bundle exec rails assets:precompile
 
 # Run database migrations when deploying to Render. It is not great, maybe there's a better way?

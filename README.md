@@ -5,6 +5,10 @@
 
 [![Actions Status](https://github.com/sugarfree900/rails-project-64/workflows/CI/badge.svg)](https://github.com/sugarfree900/rails-project-64/actions)
 
+
+### Link to deployment
+https://winged-cabbage-production.up.railway.app/
+
 Things you may want to cover:
 
 * Ruby 3.1.3

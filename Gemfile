@@ -83,3 +83,5 @@ end
 
 gem 'minitest-power_assert'
 gem 'rubocop-rails', require: false
+gem 'slim_lint'
+gem 'faker'
